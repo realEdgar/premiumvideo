@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    html {
+        font-size: 62.5%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        letter-spacing: 1.5px;
+    }
+    body {
+        background-color: #414040;
+        height: auto;
+    }
+    .general-container {
+        width: 100%;
+        min-width: 320px;
+        height: auto;
+        background: linear-gradient(190deg, #4f4f78 10%, rgba(0,0,0,0.7) 100%);
+
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        padding: 10px;
+        /* background-color: #155a13; */
+    }
+    .header h1 {
+        font-size: 2.2rem;
+        margin: 0 auto;
+        color: white;
+    }
+    .register-container {
+        width: 300px;
+        height: auto;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 20px;
+        border: 1px solid white;
+    }
+    .register-container h2 {        
+        margin: 70px 0;
+        font-size: 3rem;
+        font-weight: bold;
+        color: white;
+        text-align: center;        
+    }
+    .register-login-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .register-login-container--correo,
+    .register-login-container--contraseña {
+        width: 250px;
+        height: 30px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        padding: 20px;
+        border: none;
+        border-bottom: 1px solid white;
+        outline: none;
+        font-size: 1.4rem;
+        color: white;
+        background-color: transparent;
+    }
+    ::placeholder {
+        color: white;
+    }
+    .register-login-container button {
+        width: 250px;
+        height: 40px;
+        margin: 0 auto;
+        border: none;
+        border-radius: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        color: white;
+        cursor: pointer;
+        outline: none;
+        background-color: #474765;
+    }
+    .register-login-container--checkbox {
+        width: 250px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .register-login-container--checkbox label {
+        display: flex;        
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .register-login-container--checkbox a {
+        font-size: 1.2rem;
+        color: white;
+        text-decoration: none;
+    }
+    .register-login-container--checkbox span {
+        font-size: 1.2rem;
+        color: white;
+    }
+    .register-login-container--social-media {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+    }
+    .social-google a {
+        margin: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-decoration: none;
+    }
+    .social-twitter a {        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-decoration: none;
+    }
+    .register-login-container--registro {
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+        text-align: center;
+        color: white;
+    }
+    .register-login-container--registro a {
+        font-size: 1.4rem;
+        color: white;
+    }
+    .footer {
+        display: flex;
+        margin-top: 50px;
+    }
+    .footer a {
+        cursor: pointer;
+        text-decoration: none;
+        padding: 5px;
+        margin: 10px;
+        font-size: 1rem;
+        color: white;
+    }
+    .footer a:hover {
+        text-decoration: underline;
+    }
+    @media (min-width: 321px) {
+        .register-container {
+            width:320px;
+            /* border: 1px solid white; */
+            border-radius: 20px;
+            box-shadow: 0 8px 8px #000;
+    }
+    }
+</style>
+<body>
+    <div class="general-container">
+        <header class="header">
+            <h1>Premium Video</h1>
+        </header>
+        <section class="register-container">
+            <h2>Register</h2>
+            <form class="register-login-container" action="">
+                <input class="register-login-container--correo" type="text" placeholder="E-mail" autocomplete="email" >
+                <input class="register-login-container--contraseña" type="password" placeholder="Password" autocomplete="current-password">
+                <input class="register-login-container--contraseña" type="password" placeholder="Confirm" autocomplete="current-password">
+                <button>Register</button>                
+            </form> 
+            <section class="register-login-container--social-media">
+                <div class="social-google">
+                    <a href=""><img src="./images/google-logo.png" alt="logo-google" width="30" height="30"> Crear Cuenta con Google</a>
+                </div>
+                <div class="social-twitter">
+                    <a href=""><img src="./images/twitter.png" alt="logo-twetter" width="30" height="30"> Crear Cuenta con Twetter</a>
+                </div>
+            </section>                 
+        </section>
+        <footer class="footer">
+            <a href="#">Terms and conditions</a>
+            <a href="#">Privacity</a>
+        </footer>
+    </div>
+      
+</body>
+</html>
